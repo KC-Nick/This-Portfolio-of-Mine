@@ -11,7 +11,6 @@ Thank you for viewing this project, I have made a site to stand as a business ca
 - [Badges](#badges)
 - [Features](#features)
 - [Contribute](#how-to-contribute)
-- [Assets] (#assets)
 
 ## Installation
 
