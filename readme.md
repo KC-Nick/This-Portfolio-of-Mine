@@ -11,15 +11,15 @@ Thank you for viewing this project, I have made a site to stand as a business ca
 - [Badges](#badges)
 - [Features](#features)
 - [Contribute](#how-to-contribute)
-- [Test] (#test)
+- [Assets] (#assets)
 
 ## Installation
 
-To install this code use `git clone` to clone the repository, `git status` to make sure your copy is up to date or `git pull` to update it.
+To install this code use `git clone` to clone the repository, `git status` to make sure your copy is up to date or `git pull` to update it. Here [link](https://kc-nick.github.io/This-Portfolio-of-Mine/) you can find the live site, which will appear as such when loaded: ![A preview of my website portfolio.](./assets/preview.png).
 
 ## Usage
 
-To use this app, open the live site and check out the links I've placed to other projects!
+To use this app, open the live site and check out the links I've placed to other projects! My Contact page contains a back button to easily switch between that and the main portfoilo.
 
 ## Credits
 
@@ -40,7 +40,3 @@ This app features my portfolio of projects, using the links provided on the app 
 ## How to Contribute
 
 If you would like to contribute to this code use `git add -A` to stage files, `git commit -m "What You Changed"` to commit changed, and `git push` to push any edits to the code to Github.
-
-## Test
-
-N/A
