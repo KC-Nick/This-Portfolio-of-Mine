@@ -1,13 +1,89 @@
 <!DOCTYPE html>
 <html lang="en-US">
 
-    <head>
-        <meta charset="UTF-8">
-        <title>My Portfolio</title>
-        <link rel="stylesheet" type="text/css" href="./assets/style.css">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="./assets/style.css">
 
-    <body>
-        
-    </body>
+    <title>My Portfolio</title>
+</head>
+
+<body>
+    <header>
+        <h1 id="header">N. Wilson</h1>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#cover-letter">Cover Letter</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#resume">Resume</a>
+                    <a href="#contact-me">Contact</a>
+                </li>
+            </ul>
+            <img src="./assets/moi.jpg" alt="a picture of me">
+            <section>
+            <pre><p id="p1">
+        Hello, and welcome to my portfolio! Thank you for your time, 
+        here you will find previous works and how to contact me.
+                </p></pre>
+        </section>
+        </nav>
+        </div>
+    </header>
+    <div class="main">
+        <section class="container" id="projects">
+            <article class="card">
+                <h2 id="first-header" class="card-header"><a href="https://kc-nick.github.io/css-snippets/">CSS Snippet Cheatsheet</a>
+                </h2>
+                <pre
+                    class="pre1"><p>Here one will find a mini-project in which there is a cheatsheet for CSS coding.</p></pre>
+            </article>
+            <article class="card">
+                <h2 class="card-header"><a href="/project-two">Placeholder For Project Two</a></h2>
+                <pre class="pre1"><p>Lorem ipsum dolor sit amet, consectetur sim adipiscing elit.</p></pre>
+            </article>
+            <article class="card">
+                <h2 class="card-header"><a href="/project-three">Placeholder For Project Three</a></h2>
+                <pre class="pre1"><p> Lorem ipsum dolor sit amet, consectetur simet adipiscing elit. </p></pre>
+            </article>
+            <article class="card">
+                <h2 class="card-header"><a href="/project-four">Placeholder For Project Four</a></h2>
+                <pre class="pre1"><p>Lorem ipsum dolor sit amet, consectetur simet adipiscing elit. </p></pre>
+            </article>
+        </section>
+        <div class="sidebar">
+            <aside id="cover-letter">
+                <section>
+                    <h3>Cover Letter</h3>
+                </section>
+            </aside>
+            <article>
+                <div>
+                    <pre class="pre2"><p class="letter">To Whom It May Concern; 
+My name is Nic Wilson, I am a student of the full-stack
+bootcamp of Ohio State University. This is my portfolio,
+which was created as a project in the second week of class. 
+Here you will find projects I have worked on, and below you 
+can find my resume with further details regarding past 
+employment history. Please take your time checking over my work, 
+or my code. I hope you like what you've seen so far, 
+and I hope to get to know you soon.
+    Thank you,
+        Kasi-Nichole Wilson</pre>
+                    </p>
+                </div>
+            </article>
+            <aside id="resume">
+                <section>
+                    <h3><a href="/resume">Resume</a></h3>
+                </section>
+            </aside>
+        </div>
+    </div>
+    <footer id="contact-me">
+        <h4><a href= "contact-me">Contact Me</a></h4>
+    </footer>
+</body>
+
 </html>

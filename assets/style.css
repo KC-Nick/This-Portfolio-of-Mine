@@ -1,0 +1,210 @@
+:root {
+    --light: #fff;
+    --purple: #3c005f;
+    --blue: #5a30ce;
+    --gray: #4b4b4b;
+    --pink: #ff98f6;
+    --red: #ff6262;
+    --offlight: #ffc1c1;
+    --gradient: linear-gradient(var(--purple), #ad33ff) 100%;
+}
+
+* {
+
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--light);
+}
+/*Sets main background*/
+body {
+    background: linear-gradient(.25turn, rgb(255, 155, 197), rgb(136, 136, 255));
+}
+/* Controls the paragraphs in the header and cards */
+.pre1 {
+    white-space: pre-wrap;
+    border: 2px dotted var(--light);
+    box-shadow: 10px 10px 10px var(--purple);
+    padding: 5px;
+    background-color: var(--purple);
+}
+
+/*All the written text on the page*/
+p {
+    background: var(--gradient);
+    line-height: 30px;
+}
+/*Changes header paragraph color from white*/
+#p1 {
+    border: 2px dotted var(--light);
+    line-height: 120%;
+    color: var(--red);
+    white-space: pre-wrap;
+}
+/*h1*/
+header {
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    width: 100%;
+    background: var(--purple);
+    box-shadow: 10px 10px 10px var(--purple)
+}
+/*Keeps links the same color even if clicked before*/
+a:link,
+a:visited {
+    text-decoration: none;
+}
+/*Changes link hover over color*/
+a:hover {
+    color: var(--pink);
+    text-decoration: underline;
+}
+/*Controls all the unlisted items*/
+ul {
+    list-style-type: none;
+    margin-left: 45%;
+    font-style: italic;
+    font-weight: bold;
+    max-width: 10%;
+}
+/*Adjusts image of me*/
+img {
+    margin-top: -120px;
+    margin-left: 85%;
+    height: 30%;
+    max-width: 10%;
+    border-radius: 50%;
+}
+
+/*Cover Letter and Resume header*/
+h3 {
+    color: var(--offlight);
+    background: var(--gradient);
+}
+/*Spaces around everything in main Flexbox*/
+.main {
+    display: flex;
+    justify-content: space-between;
+}
+/*Container Flexbox*/
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 2px;
+}
+/*Child of container Flexbox*/
+.card {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    max-width: 22%;
+    margin-top: 2%;
+}
+
+#first-header {
+    font-size: 200%;
+}
+/*Header of card with picture and link*/
+.card-header {
+    border: 2px solid var(--light);
+    padding: 40px;
+    border-radius: 5px;
+    background-image: url(../assets/stockphoto.jpg);
+    background-size: 600px 300px;
+}
+/*Child Flexbox of Container*/
+.sidebar {
+    padding: 10px;
+}
+/*Cover Letter header*/
+#cover-letter {
+    width: fit-content;
+    border: groove var(--light);
+    background-color: var(--purple);
+    padding: 4px;
+    border-radius: 5px;
+    margin: 10px;
+    font-size: 20px;
+}
+/*The written box for Cover Letter*/
+.pre2 .letter {
+    border: 2px dotted var(--light);
+    border-radius: 9px 40px / 120px;
+    box-shadow: 10px 10px 10px var(--purple);
+    width: 100%;
+    margin: 4px;
+    padding: 10px;
+    white-space: pre-wrap;
+}
+/*Resume header and link*/
+#resume {
+    background-color: var(--purple);
+    padding: 4px;
+    width: fit-content;
+    border: groove var(--light);
+    border-radius: 5px;
+    font-size: 20px;
+    margin: 10px;
+}
+/*Footer and contact link*/
+#contact-me {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: fit-content;
+    border: dashed var(--light);
+    border-radius: 5px;
+    background-color: var(--purple);
+    padding: 5px;
+    margin-left: 45%;
+    margin-top: -10px;
+    font-size: 20px;
+}
+ 
+@media screen and (max-width: 992px) {
+    header {
+        width: 100%
+    }
+    #wrap-text {
+        max-width: 100%;
+    }
+    .main {
+        flex-direction: column;
+    }
+    #first-header {
+        max-width: 100%;
+    }
+    .card-header {
+        max-width: 90%;
+    }
+    .card {
+        max-width: 90%;
+    }
+}
+
+
+@media screen and (max-width: 782px) {
+    header {
+        width: 100%;
+    }
+    .main {
+        flex-direction: column;
+        width: 100%;
+    }
+    #first-header {
+        max-width: 100%;
+    }
+    .card-header {
+        max-width: 90%;
+    }
+    .card {
+        max-width: 90%;
+    }
+    .footer {
+        width: 50%;
+    }
+}
