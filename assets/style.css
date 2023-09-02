@@ -17,10 +17,12 @@
     font-family: Arial, Helvetica, sans-serif;
     color: var(--light);
 }
+
 /*Sets main background*/
 body {
     background: linear-gradient(.25turn, rgb(255, 155, 197), rgb(136, 136, 255));
 }
+
 /* Controls the paragraphs in the header and cards */
 .pre1 {
     white-space: pre-wrap;
@@ -35,6 +37,7 @@ p {
     background: var(--gradient);
     line-height: 30px;
 }
+
 /*Changes header paragraph color from white*/
 #p1 {
     border: 2px dotted var(--light);
@@ -42,6 +45,7 @@ p {
     color: var(--red);
     white-space: pre-wrap;
 }
+
 /*h1*/
 header {
     display: flex;
@@ -51,16 +55,19 @@ header {
     background: var(--purple);
     box-shadow: 10px 10px 10px var(--purple)
 }
+
 /*Keeps links the same color even if clicked before*/
 a:link,
 a:visited {
     text-decoration: none;
 }
+
 /*Changes link hover over color*/
 a:hover {
     color: var(--pink);
     text-decoration: underline;
 }
+
 /*Controls all the unlisted items*/
 ul {
     list-style-type: none;
@@ -69,6 +76,7 @@ ul {
     font-weight: bold;
     max-width: 10%;
 }
+
 /*Adjusts image of me*/
 img {
     margin-top: -120px;
@@ -83,11 +91,13 @@ h3 {
     color: var(--offlight);
     background: var(--gradient);
 }
+
 /*Spaces around everything in main Flexbox*/
 .main {
     display: flex;
     justify-content: space-between;
 }
+
 /*Container Flexbox*/
 .container {
     display: flex;
@@ -96,6 +106,7 @@ h3 {
     justify-content: space-between;
     margin: 2px;
 }
+
 /*Child of container Flexbox*/
 .card {
     display: flex;
@@ -108,6 +119,7 @@ h3 {
 #first-header {
     font-size: 200%;
 }
+
 /*Header of card with picture and link*/
 .card-header {
     border: 2px solid var(--light);
@@ -116,10 +128,12 @@ h3 {
     background-image: url(../assets/stockphoto.jpg);
     background-size: 600px 300px;
 }
+
 /*Child Flexbox of Container*/
 .sidebar {
     padding: 10px;
 }
+
 /*Cover Letter header*/
 #cover-letter {
     width: fit-content;
@@ -130,6 +144,7 @@ h3 {
     margin: 10px;
     font-size: 20px;
 }
+
 /*The written box for Cover Letter*/
 .pre2 .letter {
     border: 2px dotted var(--light);
@@ -140,6 +155,7 @@ h3 {
     padding: 10px;
     white-space: pre-wrap;
 }
+
 /*Resume header and link*/
 #resume {
     background-color: var(--purple);
@@ -150,6 +166,7 @@ h3 {
     font-size: 20px;
     margin: 10px;
 }
+
 /*Footer and contact link*/
 #contact-me {
     display: flex;
@@ -164,23 +181,28 @@ h3 {
     margin-top: -10px;
     font-size: 20px;
 }
- 
+
 @media screen and (max-width: 992px) {
     header {
         width: 100%
     }
+
     #wrap-text {
         max-width: 100%;
     }
+
     .main {
         flex-direction: column;
     }
+
     #first-header {
         max-width: 100%;
     }
+
     .card-header {
         max-width: 90%;
     }
+
     .card {
         max-width: 90%;
     }
@@ -191,19 +213,24 @@ h3 {
     header {
         width: 100%;
     }
+
     .main {
         flex-direction: column;
         width: 100%;
     }
+
     #first-header {
         max-width: 100%;
     }
+
     .card-header {
         max-width: 90%;
     }
+
     .card {
         max-width: 90%;
     }
+
     .footer {
         width: 50%;
     }
